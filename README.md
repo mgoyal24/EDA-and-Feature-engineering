@@ -1,24 +1,38 @@
-#EDA on Flight Price 
-Exploratory Data Analysis (EDA)
+#Feature Engineering on Flight Price 
+Feature Engineering
 
-Exploratory Data Analysis is a critical step in the data science process that involves summarising and visualising the main characteristics of a dataset. The primary goal of EDA is to understand the data, uncover patterns, spot anomalies, test hypotheses, and check assumptions through statistical graphics and other data visualisation techniques.
+Feature Engineering is the process of using domain knowledge to extract new features from raw data that can improve the performance of machine learning models. It involves creating, transforming, and selecting features to enhance model accuracy and efficiency.
 
-1.1.1 Key Steps in EDA:
+Key Techniques in Feature Engineering:
 
-Data Collection: Gathering relevant data from various sources.
-Data Cleaning: Handling missing values, removing duplicates, correcting errors, and ensuring data quality.
-Descriptive Statistics: Calculating mean, median, mode, standard deviation, and other statistical measures to summarise the data.
-Data Visualisation: Creating plots like histograms, box plots, scatter plots, and correlation matrices to visualise relationships and distributions.
-Data Transformation: Normalising or scaling data, and creating new variables (features) from existing ones.
+Creating New Features:
 
-1.1.2 Tools for EDA:
+Polynomial Features: Generating new features by combining existing features (e.g., interaction terms).
+Binning: Converting continuous variables into categorical bins.
+Date time Features: Extracting features like day, month, year, hour from date time variables.
+Aggregations: Summarising data using statistical measures like mean, sum, count, etc.
 
-Python Libraries: Pandas, NumPy, Matplotlib, Seaborn.
-R Libraries: ggplot2, dplyr, tidyr.
+Transforming Features:
 
-1.1.3 Benefits of EDA:
+Scaling: Standardising or normalising features to ensure they contribute equally to the model.
+Encoding Categorical Variables: Converting categorical data into numerical format using techniques like one-hot encoding, label encoding, or target encoding.
 
-Identifies underlying patterns and relationships.
-Helps in the detection of outliers and anomalies.
-Provides a foundation for further data analysis and model building.
+Feature Selection:
+
+Univariate Selection: Statistical tests to select features that have a strong relationship with the target variable.
+Recursive Feature Elimination (RFE): Iteratively building models and removing the least important features.
+Principal Component Analysis (PCA): Reducing dimensionality by transforming features into a new set of orthogonal components.
+
+
+
+Tools for Feature Engineering:
+
+Python Libraries: Scikit-learn, Pandas, Feature-engine.
+R Libraries: caret, dplyr.
+
+Benefits of Feature Engineering:
+
+Enhances the predictive power of machine learning models.
+Reduces overfitting by selecting relevant features.
+Improves model interpretability by highlighting important features.
 
